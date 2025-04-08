@@ -1,0 +1,72 @@
+
+/* Creating box for the title of the series */
+.box-1 {
+    width: 95%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #2E3135;
+    border-radius:10px;
+    box-shadow: black;
+    text-align: center;
+    border: 5px solid #444;
+    color: red;
+}
+
+/* Changing background color and the style of the font */
+body {
+    background-color: black;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Creating box for the detailed information */
+.box-2 {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    color: white;
+    box-shadow: black;
+    background-color: #2E3135;
+    border-radius: 10px;  
+    border: 5px solid #444;
+    font-size: 20px;
+}
+
+h2 {
+    color:Red;
+    font-size: 25px;
+}
+
+
+.box-navigation {   
+    font-size: 1.6rem;
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #2E3135;
+    color: Red;
+    border-radius: 10px;
+    border: 5px solid #444;
+}
+
+/* To set the alignment of the button to center */
+.button {
+    margin: 32px 0;
+    text-align: center;
+}
+
+.button a button {
+    color: white;
+    background-color: red;
+    padding: 16px 31px;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    border: none;
+}
+
+/* Changing color of the navigations */
+.box-navigation a {
+    color: Red;
+}
+
+
+
