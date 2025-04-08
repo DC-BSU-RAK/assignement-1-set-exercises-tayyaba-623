@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Resource</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>HTML and CSS reference guide</h1> 
+    </header>
+    <!-- First HTML tag -->
+    <h2>HTML tags</h2> 
+    <div class="Box">
+    <h3>HTML headings</h3>
+    <p>In HTML, heading tags are used to represent the titles and subheadings of different parts of a webpage. There are six headings in HTML, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. <code>&lt;h1&gt;</code> represents the most important headings while, <code>&lt;h6&gt;</code> represents the less important headings. </p>
+    <h4>Code example</h4>
+    <code><pre>
+        &lt;h1&gt; It's hot outside &lt;/h2&gt;
+        &lt;h2&gt; It's hot outside &gt;/h2&gt;
+        &lt;h3&gt; It's hot outside &lt;/h3&gt;
+        &lt;h4&gt; It's hot outside &lt;/h4&gt;
+        &lt;h5&gt; It's hot outside &lt;/h5&gt;
+        &lt;h6&gt; It's hot ouside  &lt;/h6&gt;
+    </code></pre>
+    </div>
+    
+    <!-- Second HTML tag -->
+    <div class="Box">
+    <h3>Unordered list</h3>  
+    <p>A list that does not follow a numerical order is called an unordered. It is defined by the <code>&lt;ul&gt;</code> tag. Each item in the unordered list starts with the <code>&lt;li&gt;</code> tag. Items in an unordered list are displayed with bullet points. In unordered list, the style of the bullet points can be changed to circle, square, or none using list-style-type property in CSS.</p>
+    <h4>Code example</h4>
+    <code><pre>
+        &lt;ul&gt;
+            &lt;li&gt; Pizza &lt;/li&gt;
+            &lt;li&gt; Burger &lt;/li&gt;
+            &lt;li&gt; Cold drink &lt;/li&gt;
+        &lt;/ul&gt;
+    </code></pre>
+    
+    <h4>Circle</h4>
+     <code><pre>
+        &lt;ul style="list-style-type: circle;"&gt;
+            &lt;li&gt; Tea &lt;/li&gt;
+            &lt;li&gt; Ice-cream &lt;/li&gt;
+            &lt;li&gt; Cake &lt;/li&gt;  
+        &lt;/ul&gt;
+    </code></pre>
+
+    <h4>Square</h4>
+    <code><pre>
+        &lt;ul style="list-style-type: square;"&gt;
+            &lt;li&gt; Noodles &lt;/li&gt;
+            &lt;li&gt; Cake &lt;/li&gt;
+        &lt;/ul&gt;  
+    </code></pre>
+
+    <h4>None</h4>
+    <code><pre>
+        &lt;ul style="list-style-type: none;"&gt;
+            &lt;li&gt; Egg &lt;/li&gt;
+            &lt;li&gt; Milk &lt;/li&gt;
+        &lt;/ul&gt;
+    </code></pre>
+    </div>
+    
+    <!-- Third HTML tag -->
+    <div class="Box">
+    <h3>ordered list</h3>
+    <p>A list that follow a specific order is called ordered list. It is represented by <code>&lt;ol&gt;</code> tag. Each item in the ordered list starts with the <code>&lt;li&gt;</code> tag. By default, the items in an ordered list are represented by numbers. However, they can be changed to roman numerals(uppercase, lowercase) or letters(uppercase, lowercase).</p>
+    <h4>Code example</h4>
+    <code><pre>
+        &lt;ol&gt;
+           &lt;li&gt;Coffee&lt;li&gt;
+           &lt;li&gt;Chocolate&lt;li&gt;
+        &lt;/ol&gt;
+    </code></pre>
+
+    <h4>Uppercase Roman</h4>
+    <code><pre>
+        &lt;ol type="I"&gt;
+           &lt;li&gt;Laptop&lt;/li&gt;
+           &lt;li&gt;Smartphone&lt;/li&gt;
+        &lt;/ol&gt;
+    </code></pre>
+
+    <h4>Lowercase Roman</h4>
+    <code><pre>
+        &lt;ol type="i"&gt;
+            &lt;li&gt;Laptop&lt;/li&gt;
+            &lt;li&gt;Smartphone&lt;/li&gt;
+        &lt;/ol&gt;
+    </code></pre>
+
+    <h4>Uppercase letters</h4>
+    <code><pre>
+        &lt;ol type="A"&gt;
+            &lt;li&gt;Spaghetti&lt;/li&gt;
+            &lt;li&gt;Biryani&lt;/li&gt;
+        &lt;/ol&gt;
+    </code></pre>
+
+    <h4>Lowercase letters</h4>
+    <code><pre>
+        &lt;ol type="a"&gt;
+            &lt;li&gt;Spaghetti&lt;/li&gt;
+            &lt;li&gt;Biryani&lt;/li&gt;
+        &lt;/ol&gt;
+    </code></pre>
+    </div>
+    
+    <!-- Fourth HTML tag -->
+    <div class="Box">
+    <h3>&lt;img&gt; tag</h3>
+    <p>This tag adds an image to a webpage. It is known as a self-closing tag because it does not have a closing tag. The height and width attributes are used to adjust the size of the image.</p>
+    <h4>Code example</h4>
+    <code><pre>
+        &lt;img src="img_cake.jpg" alt="Chocolate cake" width="500" height="400"&gt;
+    </code></pre>
+    </div>
+    
+    <!-- Fifth HTML tag -->
+    <div class="Box">
+    <h3>&lt;br&gt; tag</h3>
+    <p>&lt;br&gt; tag is use to break a line without starting a new paragraph. It is known as a self-closing tag because it does not have a closing tag.</p>
+    <h4>Code example</h4>
+    <p>Hi everyone <code>&lt;br&gt;</code> I am tayyaba <code>&lt;br&gt; I like spicy food.</code></p>
+    </div>
+    
+    <!-- Sixth HTML tag -->
+    <div class="Box">
+    <h3>&lt;hr&gt; tag</h3>
+    <p>The <code>&lt;hr&gt;</code> tag creates a horizontal line used to divide sections on a webpage. This tag is known as a self-closing tag. The length of the horizontal line can be adjusted using the width attribute.</p>
+     <h4>Code example</h4>
+     <code><pre>
+        &lt;hr style="width:50px"&gt;
+     </code></pre>
+     </div>
+     
+     <!-- Seventh HTML tag -->
+     <div class="Box">
+     <h3>&lt;li&gt; tag</h3>
+     <p>The <code>&lt;li&gt; tag</code> represents a list item in an ordered or unordered list.</p>
+     <h4>Code example</h4>
+     <h4>List in an ordered list</h4>
+     <code><pre>
+        &lt;ol&gt;
+            &lt;li&gt;Tayyaba&lt;/li&gt;
+            &lt;li&gt;Naila&lt;/li&gt;
+        &lt;/ol&gt;
+     </code></pre>
+
+     <h4>List in unordered list</h4>
+     <code><pre>
+        &lt;ul&gt;
+            &lt;li&gt;Red&lt;/li&gt;
+            &lt;li&gt;Black&lt;/li&gt;
+        &lt;/ul&gt;
+     </code></pre>
+     </div>
+     
+     <!-- Eighth HTML tag -->
+     <div class="Box">
+     <h3>&lt;a&gt; tag</h3>
+     <p>The <code>&lt;a&gt;</code> tag is used to create hyperlinks that connect one webpage to another or navigate to specific section within the same page.</p>
+     <h4>Code example</h4>
+     <code><pre>
+        &lt;a href="home.html"&gt;Home&lt;/a&gt; |
+        &lt;a href="Pay.html"&gt;Pay&lt;/a&gt; |
+        &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+     </code></pre>
+     </div>
+     
+     <!-- Ninth HTML tag -->
+     <div class="Box">
+     <h3>&lt;body&gt; tag</h3>
+     <p>The <code>&lt;body&gt;</code> tag respresents the main elements of a webpage.It contaims all the content like text, images, video, headings, and more. The body tag is placed after the head tag. Only one <code>&lt;body&gt;</code> tag is allowed in an HTML document.</p>
+     <h4>Code example</h4>
+     <code><pre>
+     &lt;html&gt;  
+     &lt;head&gt; 
+        &lt;title&gt;Welcome to my webpage&lt;/title&gt;  
+     &lt;/head&gt;      
+     &lt;body&gt;    
+        &lt;h1&gt;Welcome to my webpage&lt;/h1&gt;
+        &lt;p&gt;In this webpage, I'll share my daily routine with you.&lt;/p&gt;
+        &lt;img src="img_food.jpg" alt="Spicy food"&gt;
+     &lt;/body&gt;
+     &lt;html&gt;
+     </code></pre>
+     </div>
+     <!-- Tenth HTML tag -->
+     <div class="Box">
+     <h3>&lt;code&gt; tag</h3>
+     <p>In HTML, <code>&lt;code&gt;</code> tag is used to display code as plain text in a monospaced (type-writer style) font. It is generally used to show inline code.</p>
+     <h4>Code example</h4>
+     <p>The <code>background-color</code> property is used to set the background color of an element. </p>
+     </div>
+
+     <h2>CSS property</h2>
+     <!-- First CSS property -->
+     <div class="Box">
+     <h3>Background-color</h3>
+     <p>The <code>background-color</code> property is used to set the background color of an element on a webpage. This property is usually applied within the <code>&lt;style&gt;</code> tag. By using the body tag in CSS, the background color of the entire webpage or website can be changed.</p>
+     <h4>Code example</h4>
+     <code><pre>
+        body {
+            background-color: black;
+        }
+     </pre></code>
+     <p>To change the background color of a specific element, the code will be written like this in CSS:</p>
+     <code><pre>
+     h2 {
+        background-color: pink;
+     }
+
+     p {
+        background-color: white;
+     }
+     </code></pre>
+     </div>
+     
+     <!-- Second CSS property -->
+     <div class="Box">
+     <h3>Opacity</h3>
+     <p>This CSS property controls the transparency of an element. The value of opacity starts from 0.0 to 1.0. The higher the value, the less transparent. The lower the value, the more transparent. 
+     <h4>Code example</h4>
+     <code><pre>
+     p {
+        background-color: blue;
+        opacity: 0.1;
+        }
+     </code></pre>
+     <strong>Important point:</strong>The value of opacity can effect the transparency of the text as well, making it difficult to read. This issue can be resolved by using RGBA color. It only effects the transparency of the background not the text. RGBA color contains four values the first three represents the color, while the last value represents the opacity value for the background of the element.</p>
+     <h4>Code example</h4>
+     <code><pre>
+     p {
+        background-color: rgba(0, 6, 3, 0.2)
+        }
+    </code></pre>
+    </div>
+    
+    <!-- Third CSS property -->
+    <div class="Box">
+     <h3>border-radius</h3>
+     <p>The <code>border-radius</code> property is used to round the corners of elements like images, boxes, etc. Each of the four corners can have a different radius value. Bellow the code will use to equally round the corners of the elements.</p>
+     <h4>Code example</h4>
+     <code><pre>
+        .image {
+            border-radius: 14px;
+        }
+    </code></pre>
+    <p>Bellow the code will use to add different <code>border-radius</code> for each four corners.</p>
+    <h4>Code example</h4>
+    <code><pre>
+        img {
+            border-radius: 5px 7px 2px 3px;
+        }
+    </code></pre>
+    </div>
+    
+    <!-- Fourth CSS property -->
+    <div class="Box">
+    <h3>Padding</h3>
+    <p>In CSS, padding adds space inside an element. If there is a border, the space inside the border and around the content is called padding.</p>
+    <h4>Code example</h4>
+    <code><pre>
+        p {
+            padding: 20px;
+        }
+    </code></pre>
+    </div>
+    
+    <!-- Fifth CSS property -->
+    <div class="Box">
+    <h3>Margin</h3>
+    <p>In CSS, the space outside an element and it's border is called margin. Margin allow to add space on all four sides of an element: right, left, top and bottom.</p>
+    <h4>Code example</h4>
+    <code><pre>
+        p {
+            margin-right: 50px;
+            margin-left: 60px;
+            margin-top: 100px;
+            margin-right: 20px;
+        }
+    </code></pre>
+    </div>
+    
+    <!-- Sixth CSS property -->
+    <div class="Box">
+    <h3>font-size</h3>
+    <p>This property of CSS is used to manage the size of the font.</p>
+    <h4>Code example</h4>
+     <code><pre>
+        h3 {
+            font-size: 60px;
+        }
+    </code></pre>
+    </div>
+    
+    <!-- Seventh CSS property -->
+    <div class="Box">
+     <h3>font-weight</h3>
+     <p>The <code>font-weight</code> property is used to manage the thickness or lightness of the text. This CSS property allows for adjusting how bold or unbold the text appears.</p>
+     <h4>Code example</h4>
+     <code><pre>
+       .para {
+          font-weight: bold;
+       }
+    
+       .para {
+           font-weight: 400;
+        }
+     </code></pre>
+     </div>
+     
+     <!-- Eighth CSS property -->
+     <div class="Box">
+     <h3>text-decoration-line</h3>
+     <p>This CSS property allows the addition of decorative lines to text, such as overline, underline, or line-through.</p>
+     <h4>Code example</h4>
+     <code><pre>
+        p {
+            text-decoration-line: underline;
+        }
+
+        p {
+            text-decoeation: overline line-through;
+        }
+     </pre></code>
+     </div>
+     <hr>
+     <p div class="center">&copy; 2025 HTML and CSS Resource. All rights reserved.</p>
+</body>
+</html> 
+
