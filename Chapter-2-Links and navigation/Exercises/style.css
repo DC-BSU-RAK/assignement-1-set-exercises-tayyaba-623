@@ -66,6 +66,8 @@ h2 {
 /* Changing color of the navigations */
 .box-navigation a {
     color: Red;
+    padding: 20px;
+    text-decoration: none;
 }
 
 
