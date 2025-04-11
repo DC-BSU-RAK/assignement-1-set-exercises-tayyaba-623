@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three images</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<style>
+    h1 {
+        text-align: center;
+        color: black;
+    }
+
+    h2, p {
+        padding: 10px;
+    }
+
+    .filter-1 {      /* Adding CSS filter to the first image */
+        filter: saturate(10);
+       
+    }
+
+    .filter-1:hover {      /* Adding hover effect to the first image */
+        filter: none;
+        transform: scale(1.06);
+    }
+
+    .filter-2 {         /* Adding CSS filter to the second image */
+        filter: grayscale(100%);
+    }
+
+    .filter-2:hover {     /* Adding hover effect to the second image */
+        filter: none;
+        transform: scale(1.06);
+    }
+
+    .filter-3 {       /*Adding CSS filter to the third image */
+        filter: blur(10px);
+    }
+
+    .filter-3:hover {     /* Adding hover effect to the third image */
+        filter: none;
+        transform: scale(1.06);
+    }
+
+    .container {
+        float: left;
+        width: 33.33%;
+        gap: 50px;
+        padding: 25px;   /* Creating space between images */
+        cursor: pointer;
+    }
+
+    body {
+        background-color: #F1E9D2;      /* Changing the color of the background */
+        font-family: "Nunito", sans-serif;
+    }
+
+    .header {     
+        background-color: #ead1c3;   /* Changing the background color of the header */
+        padding: 40px;
+    }
+
+    * {             /* Appling boder-sizing to all elements */
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <div class="header">
+    <header>
+    <h1>Nature</h1>
+    </header>
+    </div>
+      
+     <!-- First image -->
+      <div class="container">
+        <img src="https://images.unsplash.com/photo-1721962716463-3b8a69aa3808?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=640" alt="A charming blue lake with pine trees" title="Blue enchanting lake" class="filter-1" width="450" height="auto">
+        <p>Photo by Peter Robbins on unsplash</p>
+      </div>
+     
+     <!-- Second image -->
+      <div class="container">
+        <img src="https://images.unsplash.com/photo-1494806812796-244fe51b774d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w640" alt="Mountains under the clouds" title="Mountains with the beautiful sky" class="filter-2" width="450" height="auto">
+        <P>Photo by Aleks Dahlberg on unsplash</P>
+      </div>
+     
+     <!-- Third image -->
+      <div class="container">
+        <img src="https://images.unsplash.com/photo-1566037826569-58dad83d3ea6?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=640" alt="Pine trees with a beautiful sky and mountains" title="An amazing view of mountains" class="filter-3"  width="450" height="auto">
+        <p>Photo by Daria on unsplash</p>
+      </div>
+
+</body>
+</html>
