@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structuring a webpage</title>
+</head>
+<style>
+    .header {   
+        background-color: #17072b;
+        text-align: center;  /* Changing the alignment of the text to center */
+        padding: 30px;   /* Adding space inside the header */
+        font-family: Tahoma, Verdana,  sans-serif;
+    }
+
+    h2 {
+        color: black;
+        text-decoration: underline;
+    }
+
+    h1 {  
+        color: white;
+        text-decoration: underline;  /* Underlining the text */
+        font-size: 50px;
+    }
+
+    body {    /* Changing the font size and style */
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+    }
+
+    .header a {  /* Changing the color and size of navigation bars */
+        color: white;
+        font-size: 25px;
+        margin: 0 15px;
+        text-decoration: none;
+    }
+
+    .footer {
+        background-color: #8c15e9;
+        color:white;
+        width: 100%;
+        height: 38px;
+        justify-content: center;
+        position: fixed;
+        left: 0%;
+        bottom: 0%;
+        display: flex;
+        align-items: center;
+    }
+
+    .Box {      /* Creating a box for the text */
+        background-color: #172d67;
+        color: white;
+        width: 35%;
+        padding: 20px;
+        height: 406px;
+        margin-top: 17px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text {
+        width: 77%;
+        padding: 17px;
+        padding-left: 15px;
+    }
+
+    .picture {
+        gap: 21px;
+        display: flex;
+        margin-top: 29px;
+    }
+
+</style>
+<body>     
+      <!-- Adding header -->
+    <header class="header">       
+       <h1>DIGI FEST 2022</h1>
+       <nav>
+         <a href="home.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="what's on.html">What's On</a>
+         <a href="contact.html">Contact</a>
+         <a href="tickets.html">Tickets</a>
+       </nav>
+    </header>
+    
+    <!-- Main section of a webpage -->
+    <main class="container">
+       <section class="text">
+         <article>     
+            <h2>Welcome</h2>
+            <p>Digi Fest is a celebration of digital and technology in the city of Cardiff. This year, we are celebrating 'collaboration', so come and find out about the latest collaborations that are happening in this historic and innovative city. They promise an educational and inspirational packed programme for all.</p>
+            <img src="Pic1.png" width="920" height="280">
+         </article>
+       </section>
+ 
+      <aside class="Box">
+        <section>
+           <h2 style="color: white">Line Up</h2>
+         <article>
+            <p>- Introduction to HTML and CSS</p>
+            <p>- Links and images</p>
+            <p>- Page Layout</p>
+         </article>
+         <!-- Adding images -->
+         <div class="picture">
+         <img src="Pic2.png" width="210" height="180">
+         <img src="Pic3.png" width="210" height="180">
+        </div>
+       </section>
+     <aside>
+    </main>
+        
+        <!-- Adding footer -->
+         <footer class="footer">
+             <p>&copy; 2022 DigiFest Ltd. </p>
+         </footer>
+ </body>
+ </html>
+    
