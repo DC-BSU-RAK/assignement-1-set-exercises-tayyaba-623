@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Video</title>
+</head>
+<style>
+
+    body {
+       background-color: #FFA500;
+    }
+
+     .video-container {
+        display: flex;
+        height: 70vh;
+        top: 0%;
+        bottom: 0%;
+        text-align: center; /* Set the alignment of the video to center */
+        align-items: center;
+        margin: 0;
+        margin-left: 440px;  /* Adding space to the left of the video */
+        margin-top: 100px;  /* Adding space to the top of the video */
+        margin-bottom: 60px;  /* Adding space on the bottom of the video */
+    }
+
+    video {
+        max-width: 80%;  /* Maximum width of the video */
+        max-height: 80%; /* Maximum height of the video */ 
+        color: white;
+    }
+
+   
+</style>
+<body>
+      <div class="video-container">
+      <video controls loop poster="sunshine.jpg">
+          <source src="sunshine.mp4" type="video/mp4">
+      </video>
+</body>
+</html>
