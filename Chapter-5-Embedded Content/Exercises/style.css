@@ -1,0 +1,67 @@
+body {
+    background-image: url('https://media.istockphoto.com/id/947830458/vector/music-background-with-notes-and-watercolor-texture.jpg?s=612x612&w=0&k=20&c=p9u_IlWkQRnlNmElUu8Pzs4Sso7aFOqaJH5EL7GYIhw=');
+    background-position: cover;
+}
+
+.btn {
+    background-color: brown;  /* Background color of the button */
+    color: white;   /* Color of the text */
+    padding: 40px;
+    border-radius: 10px;   /* Rounded the corners of the button */
+    margin: 10px;   /* Adding space around the button */
+}
+
+.container {
+    padding: 45px;
+    border: 30px soild black;
+}
+
+.speak-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;  /* Adding space between the buttons */
+    margin-top: 50px;
+    margin-right: 400px;
+}
+
+.btn:hover {
+    filter: grayscale(100%);  /* Adding CSS filter on the button */
+    transform: scale(1.06);
+}
+
+h1 {
+    text-align: center;
+    color: black;  /* font color of the heading */
+}
+
+
+.box {
+    width: 65%;
+    height: 10%;
+    margin: 10px auto;
+    margin-top: 80px;
+    padding: 10px;   /* Adding space inside the box */
+    background-color: white;  /* Background color of the box */
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+textarea {
+    padding: 70px;   /* Adding space inside the text box */
+    background-color: black;  /* Background color of the text box */
+    color:white;    
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-left: 550px;
+    margin-bottom: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+#speak {
+    background-color:white;  /* Background color of the button */
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+}

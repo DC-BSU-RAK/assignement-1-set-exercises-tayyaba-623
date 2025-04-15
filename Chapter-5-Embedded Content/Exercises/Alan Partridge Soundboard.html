@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan Partridge Soundboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Alan Partridge Soundboard </h1>
+  <audio id="Audios">
+    <source id="audioSource" src="" type="audio/mpeg">
+  </audio>
+  <!-- Audios -->
+ <div class="box">
+  <div class="container">
+  <button class="btn" onclick="playAudio('ah-ha.mp3')" type="button">Aha</button>
+  <button class="btn" onclick="playAudio('back-of-the-net.mp3')" type="button">Back of the net</button>
+  <button class="btn" onclick="playAudio('bangoutoforder.mp3')" type="button">bang out of order</button>
+  <button class="btn" onclick="playAudio('dan.mp3')" type="button">dan</button> 
+  <button class="btn" onclick="playAudio('emailoftheevening.mp3')" type="button">email of the evening</button>
+  <button class="btn" onclick="playAudio('hellopartridge.mp3')" type="button">hello partridge</button>
+  <button class="btn" onclick="playAudio('iateascotchegg.mp3')">i ate a scotchegg</button>
+  <button class="btn" onclick="playAudio('imconfused.mp3')">im confused</button>
+  </div>
+ </div>
+
+<!-- Text box -->
+ <div class="color">
+  <div class="speak-container">
+    <textarea placeholder="Type here"></textarea>
+    <button id="speak">Speak</button>
+  </div>
+ </div>
+
+<!-- Connecting the Java Script file to the HTML page-->
+  <script src="script.js"></script>
+</body>
+</html>
