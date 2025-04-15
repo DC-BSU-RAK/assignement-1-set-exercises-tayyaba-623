@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>RGB Guessing Game</h1>
+    <div class="box">
+        <div class="game-container">
+            <!-- Random colors -->
+            <h2 id="colors">(R, G, B)</h2>
+            <!-- Multiple options -->
+            <div id="choices"></div>
+            <!-- Total number of lives -->
+            <div id="lives">lives: 5</div>
+            <!-- Total scores -->
+            <div id="scores">Final scores:</div>
+            <!-- Restart button -->
+            <button class="btn">Restart game</button>
+        </div>
+    </div>
+      
+    <!-- Internal Java script file -->
+    <script>
+        const colorsContainer = document.getElementById("colors")
+        const choices = document.getElementById("choices")
+        let getcolors = null;
+        let lives = 5;
+        let scores = 0;
+    
+        function getRandomIntegers(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        
+        // Generates random RGB colors between 0 to 255
+        function getRandomColorsRGB() {
+            const red = Math.floor(Math.random() * 255);
+            const green = Math.floor(Math.random() * 255);
+            const blue = Math.floor(Math.random() * 255);
+            return `rgb(${red}, ${green}, ${blue})`;
+        }
+        
+        // function to start the game
+        function startGame () {
+            getcolors = getRandomColorsRGB();
+            colorsContainer.innerText = getcolors;
+            choices.innerHTML = "";
+
+            const ansIndex = getRandomIntegers(0, 2);
+            
+            // Adgusting the loop to display three options
+            for(let i = 0; i<3; i++) {
+                const div = document.createElement('div');
+                // Styling the option boxes
+                div.style.height = '70px';
+                div.style.width = '120px';
+                div.style.margin = '10px';
+                div.style.borderRadius = '10px';
+                const thisColor = i == ansIndex ? getcolors : getRandomColorsRGB();
+                div.style.backgroundColor = thisColor;
+                
+                // Updating number of lives
+                function updatelives () {
+                    const livesContainer = document.getElementById("lives");
+                    livesContainer.innerText = `lives: ${lives}`;  
+                }
+                
+                
+                if (lives <= 0) {
+                    alert("Out. Restart the game if you want");
+                    lives = 5;
+                }
+                
+                // Updates the total scores
+                function updatescores() {
+                    const scoresContainer = document.getElementById("scores");
+                    scoresContainer.innerText = `scores: ${scores}`
+                }
+
+                div.addEventListener("click", function () {
+                    if (thisColor == getcolors) {
+                        alert('Correct');  // Displaying the message
+                        scores++; // Increase score by 1 after a correct answer
+                    }
+                    else {
+                        alert('Incorrect, you have lost one live'); // Displaying the message 
+                        lives--  // Decrease score by 1 after an incorrect answer
+                    }
+
+                    if (lives <= 0) {
+                        document.querySelector('.btn').style.display = 'block';
+                        document.getElementById('choices').style.pointerEvents = 'none';
+                    }
+                    updatelives();
+                    startGame();
+                    updatescores();
+                });
+                
+                // Restarts the game when the restart button is clicked
+                document.querySelector('.btn').addEventListener('click', () => {
+                    location.reload();
+                });
+
+                choices.append(div);
+            }
+        }
+        window.addEventListener("load", () => startGame());
+    </script>
+</body>
+</html>

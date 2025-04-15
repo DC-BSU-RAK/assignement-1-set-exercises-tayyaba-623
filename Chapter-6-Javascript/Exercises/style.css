@@ -1,0 +1,46 @@
+.box {
+    width: 20%;   /* Width of the box */
+    height: 10%;    /* Height of the box */
+    background-color: #FF69B4;   /* Background color of the box */
+    padding: 10px;   /* Adding space inside the box */
+    margin-top: 50px;     /* Adding space outside the top of the box */
+    margin-bottom: 100px;   /* Adding space outside the bottom of the box */
+    margin-left: 600px;     /* Adding space outside the left of the box */
+    border: 5px solid white;   
+    border-radius: 15px;    /* Rounded the corners of the box */
+}
+
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2017/03/02/08/58/background-texture-2110724_1280.jpg');  /* Background image */
+}
+
+.btn {
+    padding: 10px;  /* Adding space inside the button */
+    margin: 10px;     /* Adding space around the button */
+    background-color: #FFB3DE;   /* Background color of the restart button */
+    display: none;
+}
+
+.bth:hover {  
+    filter: hue-rotate(180deg);   /* Adding CSS filter to the button */
+}
+
+h1 {
+    text-align: center;  /* Change the alignment of the text to center */
+    margin-top: 100px;
+}
+
+.game-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;    /* Adding space between the option boxes */
+    margin: 20px 0;   /* Adding space around the boxes */
+}
