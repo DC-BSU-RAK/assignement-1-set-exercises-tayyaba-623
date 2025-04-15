@@ -44,18 +44,31 @@ img {
     margin: 10px;
     border-radius: 4%;
 }
+
+.navigation a {
+    padding: 10px;
+    color: black; /* Changing the color of the navigation links to black */
+    font-size: 20px;
+}
 </style>
 <body>
     <!-- Change the color of text to green -->
     <h1 style="color: green;">Chicken Spaghetti</h1>
     <hr>
-    <a href="home.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a>   
-    
+
+    <div class="navigation">
+      <nav>
+        <a href="#Description">Description</a> 
+        <a href="#Ingredients">Ingredients</a> 
+        <a href="#Methods">Methods</a> 
+      </nav>  
+    </div>
+
     <!-- Description of the recipe -->
-    <h2>Description</h2>
-    <p style="font-size:120%;">Chicken spaghetti is a mouthwatering dish that combines juicy, tender chicken, flavorful sauce, and a soft omelet. The creamy sauce creates a satisfying <br> experience. It's perfect for any event, whether you cook it for family or serve it at a gathering.</p>
+    <div id="Description">
+      <h2>Description</h2>
+      <p style="font-size:120%;">Chicken spaghetti is a mouthwatering dish that combines juicy, tender chicken, flavorful sauce, and a soft omelet. The creamy sauce creates a satisfying <br> experience. It's perfect for any event, whether you cook it for family or serve it at a gathering.</p>
+    </div>
     
 
     <!-- Adding GIFs -->
@@ -67,31 +80,34 @@ img {
     <br>
 
     <!-- Change the color of text to black -->
-     <h2 style="color:black">Ingredients</h2>
+     <div id="Ingredients">
+       <h2 style="color:black">Ingredients</h2>
 
-     <!-- List of the ingredients -->
-      <div class="Box-1">
-        <ul>
-            <li>One pack of spaghetti</li>
-            <li>Cooking oil</li>
-            <li>3 cloves of garlic</li>
-            <li>1 small onion</li>
-            <li>1 kg chicken</li>
-            <li>1 medium-sized carrot</li>
-            <li>1 medium-sized capsicum</li>
-            <li>1 medium-sized cauliflower</li>
-            <li>Salt (to taste)</li>
-            <li>1 tablespoon black pepper</li>
-            <li>1/2 teaspoon vinegar</li>
-            <li>1 teaspoon chilli sauce</li>
-            <li>1/2 teaspoon soy sauce</li>
-            <li>Ketchup</li>
-            <li>3 Eggs</li>
-        </ul>
-      </div>
+       <!-- List of the ingredients -->
+        <div class="Box-1">
+           <ul>
+              <li>One pack of spaghetti</li>
+              <li>Cooking oil</li>
+              <li>3 cloves of garlic</li>
+              <li>1 small onion</li>
+              <li>1 kg chicken</li>
+              <li>1 medium-sized carrot</li>
+              <li>1 medium-sized capsicum</li>
+              <li>1 medium-sized cauliflower</li>
+              <li>Salt (to taste)</li>
+              <li>1 tablespoon black pepper</li>
+              <li>1/2 teaspoon vinegar</li>
+              <li>1 teaspoon chilli sauce</li>
+              <li>1/2 teaspoon soy sauce</li>
+              <li>Ketchup</li>
+             <li>3 Eggs</li>
+          </ul>
+       </div>
+     </div>
       <br>
 
-      <!-- Recipe of the chicken spaghetti -->
+    <!-- Recipe of the chicken spaghetti -->
+    <div id="Methods">
       <h2>Method</h2>
       <div class="Box-2">
         <ol style="font-size: 130%">
@@ -107,6 +123,7 @@ img {
             <li>Now the spaghetti is ready to enjoy with a cold drink.</li>
         </ol>
       </div>
+    </div>  
       <br>
 
       <!-- Adding GIFs -->
