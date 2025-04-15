@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol Calculator</title>
+</head>
+<style>
+    body {
+        background-image: url('https://images.unsplash.com/photo-1735925970383-0a2980d27f48?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');    /* Background image */
+        background-image: cover;  /* Make the image cover the full background */
+        background-position: center;
+    }
+
+    .petrol_calculator {
+        background-color: orange;   /* Background color of the calculator */
+        padding: 30px; /* Adding space inside the calculator */
+        width: 15%;
+        border: 5px solid white;   /* Adding white borders to the calculator */
+        border-radius: 10px;  /* Rounded the corners of the calculator */
+    }
+
+    .container {
+        display: flex;
+        height: 80vh;  /* Height of the calculator */
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .btn {
+        padding: 4px; /* Adding space inside the button */
+        margin: 6px;   /* Adding space around the button */
+        background-color: black;  /* Background color of the button */
+        color: white; /* Text color */
+    }
+ 
+    .btn:hover {   /* Adding hover effect */
+        background-color: rbg(119, 117, 177); 
+    }
+
+    h1 {
+        text-align: center;  /* Alignment of the text */
+        margin-bottom: 20px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
+<body>
+    <h1>Petrol Calculator</h1>
+    <div class="container">
+      <div class="petrol_calculator">
+        <p>Cost of petrol per litre</p>
+        <!-- Adding an input field for the petrol price -->
+        <input id="Petrol_price" placeholder="1.72" type="number"> 
+        <p>Enter liters purchased</p>
+        <!-- Adding an input field for the petrol liters -->
+        <input id="Petrol_liters" placeholder="0" type="number">
+        <!-- Button to calculate the total price -->
+        <div class="button">
+        <button class="btn" onclick="Calculate()">Calculate</button>
+        </div>
+        <p>Total cost:</p>
+        <p id="Total_price"></p>
+    </div>
+
+    <!-- Connecting the Java script file to the HTML page  -->
+    <script src="script.js"></script>
+</body>
+</html>
